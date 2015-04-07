@@ -1,0 +1,24 @@
+<html>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+    <body>
+
+        <div ng-app="" ng-init="names=['Kevin','Brad','Brian'];
+                                countries=[{name:'Canada', population:'30,000,000'},
+                                           {name:'United States', population:'300,000,000'}]">
+            <ul>
+                <li ng-repeat="x in names">
+                    {{ x }}
+                </li>
+            </ul>
+            
+            <ul>
+                <li ng-repeat="x in countries">
+                    {{ x.name + ": " + x.population }}
+                </li>
+            </ul>
+        </div>
+    </body>
+    
+</html>
